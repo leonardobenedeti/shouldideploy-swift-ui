@@ -14,6 +14,9 @@
 		AC1541C32C9B700200624492 /* ShouldideploySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541C22C9B700200624492 /* ShouldideploySwiftTests.swift */; };
 		AC1541CD2C9B700200624492 /* ShouldideploySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541CC2C9B700200624492 /* ShouldideploySwiftUITests.swift */; };
 		AC1541CF2C9B700200624492 /* ShouldideploySwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541CE2C9B700200624492 /* ShouldideploySwiftUITestsLaunchTests.swift */; };
+		AC1541DD2C9B703800624492 /* ShouldideployModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541DC2C9B703800624492 /* ShouldideployModel.swift */; };
+		AC1541E12C9B710700624492 /* ShouldideployViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541E02C9B710700624492 /* ShouldideployViewModel.swift */; };
+		AC1541E92C9B77B900624492 /* DeployView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541E82C9B77B900624492 /* DeployView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		AC1541C82C9B700200624492 /* ShouldideploySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShouldideploySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1541CC2C9B700200624492 /* ShouldideploySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldideploySwiftUITests.swift; sourceTree = "<group>"; };
 		AC1541CE2C9B700200624492 /* ShouldideploySwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldideploySwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC1541DC2C9B703800624492 /* ShouldideployModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldideployModel.swift; sourceTree = "<group>"; };
+		AC1541E02C9B710700624492 /* ShouldideployViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldideployViewModel.swift; sourceTree = "<group>"; };
+		AC1541E82C9B77B900624492 /* DeployView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		AC1541B02C9B6FFF00624492 /* ShouldideploySwift */ = {
 			isa = PBXGroup;
 			children = (
+				AC1541E42C9B730B00624492 /* View */,
+				AC1541DE2C9B70EA00624492 /* ViewModel */,
+				AC1541DB2C9B702500624492 /* Model */,
 				AC1541B12C9B6FFF00624492 /* ShouldideploySwiftApp.swift */,
 				AC1541B32C9B6FFF00624492 /* ContentView.swift */,
 				AC1541B52C9B700200624492 /* Assets.xcassets */,
@@ -125,6 +134,30 @@
 				AC1541CE2C9B700200624492 /* ShouldideploySwiftUITestsLaunchTests.swift */,
 			);
 			path = ShouldideploySwiftUITests;
+			sourceTree = "<group>";
+		};
+		AC1541DB2C9B702500624492 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC1541DC2C9B703800624492 /* ShouldideployModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC1541DE2C9B70EA00624492 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC1541E02C9B710700624492 /* ShouldideployViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC1541E42C9B730B00624492 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC1541E82C9B77B900624492 /* DeployView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1541E12C9B710700624492 /* ShouldideployViewModel.swift in Sources */,
+				AC1541DD2C9B703800624492 /* ShouldideployModel.swift in Sources */,
+				AC1541E92C9B77B900624492 /* DeployView.swift in Sources */,
 				AC1541B42C9B6FFF00624492 /* ContentView.swift in Sources */,
 				AC1541B22C9B6FFF00624492 /* ShouldideploySwiftApp.swift in Sources */,
 			);
