@@ -17,6 +17,9 @@
 		AC1541DD2C9B703800624492 /* ShouldideployModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541DC2C9B703800624492 /* ShouldideployModel.swift */; };
 		AC1541E12C9B710700624492 /* ShouldideployViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541E02C9B710700624492 /* ShouldideployViewModel.swift */; };
 		AC1541E92C9B77B900624492 /* DeployView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541E82C9B77B900624492 /* DeployView.swift */; };
+		AC1541EB2C9C7FE700624492 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541EA2C9C7FE700624492 /* LoadingView.swift */; };
+		AC1541EE2C9C816900624492 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541ED2C9C816900624492 /* CustomButton.swift */; };
+		AC1541F02C9C818200624492 /* ColoredBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1541EF2C9C818200624492 /* ColoredBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		AC1541DC2C9B703800624492 /* ShouldideployModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldideployModel.swift; sourceTree = "<group>"; };
 		AC1541E02C9B710700624492 /* ShouldideployViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldideployViewModel.swift; sourceTree = "<group>"; };
 		AC1541E82C9B77B900624492 /* DeployView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployView.swift; sourceTree = "<group>"; };
+		AC1541EA2C9C7FE700624492 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AC1541ED2C9C816900624492 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		AC1541EF2C9C818200624492 /* ColoredBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,9 +161,20 @@
 		AC1541E42C9B730B00624492 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC1541EC2C9C815600624492 /* Components */,
 				AC1541E82C9B77B900624492 /* DeployView.swift */,
+				AC1541EA2C9C7FE700624492 /* LoadingView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AC1541EC2C9C815600624492 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AC1541ED2C9C816900624492 /* CustomButton.swift */,
+				AC1541EF2C9C818200624492 /* ColoredBackground.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +309,12 @@
 			files = (
 				AC1541E12C9B710700624492 /* ShouldideployViewModel.swift in Sources */,
 				AC1541DD2C9B703800624492 /* ShouldideployModel.swift in Sources */,
+				AC1541F02C9C818200624492 /* ColoredBackground.swift in Sources */,
 				AC1541E92C9B77B900624492 /* DeployView.swift in Sources */,
 				AC1541B42C9B6FFF00624492 /* ContentView.swift in Sources */,
+				AC1541EE2C9C816900624492 /* CustomButton.swift in Sources */,
 				AC1541B22C9B6FFF00624492 /* ShouldideploySwiftApp.swift in Sources */,
+				AC1541EB2C9C7FE700624492 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

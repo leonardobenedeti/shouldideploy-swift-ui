@@ -9,12 +9,19 @@ import SwiftUI
 
 struct DeployView: View {
     let shouldideployToday: ShouldideployModel
+    var onRefresh: () -> Void
     
     var body: some View {
-        NavigationView {
+        VStack(spacing: 20){
             VStack{
-                Text(shouldideployToday.message)
+                Text(shouldideployToday.shouldideploy ? "Yes" : "No").font(.largeTitle).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Text(shouldideployToday.message).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             }
+            CustomButton(title: "Refresh", action: {
+                onRefresh()
+            })
         }
+        
+    
     }
 }

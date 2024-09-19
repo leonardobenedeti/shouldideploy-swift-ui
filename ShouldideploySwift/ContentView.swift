@@ -12,24 +12,19 @@ struct ContentView: View {
     
     
     var body: some View {
-        VStack{
+        ZStack{
             if shouldideployViewModel.isLoading {
-                VStack{
-                    ProgressView().progressViewStyle(CircularProgressViewStyle())
-                    DeployView(shouldideployToday: ShouldideployModel(date: Date.now.ISO8601Format(), timezone: "São Paulo", shouldideploy: false, message: "Na dúvida não faça nada até conseguirmos carregar..."))
-                }
-            } else if let shouldideployToday = shouldideployViewModel.shouldideployToday {
-                DeployView(shouldideployToday: shouldideployToday)
-                Button(action: {
+                ColoredBackgroundView(color: Color.yellow)
+                LoadingView()
+            } else {
+                ColoredBackgroundView(color: shouldideployViewModel.shouldideployToday.shouldideploy ? Color.green : Color.red)
+                DeployView(shouldideployToday: shouldideployViewModel.shouldideployToday, onRefresh: {
                     shouldideployViewModel.fetchGuidance()
-                }, label: {
-                    Text(
-                        shouldideployToday.shouldideploy ?
-                            "Quer conferir de novo ?" :
-                            "E agora, será que já posso ?"
-                    )
                 })
+                
+                
             }
+            
         }.onAppear{
             shouldideployViewModel.fetchGuidance()
         }
@@ -39,3 +34,6 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
+

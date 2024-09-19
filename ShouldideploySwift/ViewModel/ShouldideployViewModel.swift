@@ -8,7 +8,7 @@
 import Foundation
 
 class ShouldideployViewModel : ObservableObject {
-    @Published var shouldideployToday: ShouldideployModel?
+    @Published var shouldideployToday: ShouldideployModel = ShouldideployModel()
     @Published var isLoading = false
     
     func fetchGuidance(){
@@ -16,10 +16,8 @@ class ShouldideployViewModel : ObservableObject {
         
         isLoading = true
         
-        
-        
         URLSession.shared.dataTask(with: url) { data, response, error in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0){
+            DispatchQueue.main.async {
                 self.isLoading = false
             }
             if let data = data {
