@@ -12,19 +12,19 @@ struct ContentView: View {
     
     
     var body: some View {
-        ZStack{
+        ZStack(alignment: .top){
+            Text("Should I deploy today?")
+                .padding(.top, 150)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .fontWeight(.bold)
             if shouldideployViewModel.isLoading {
-                ColoredBackgroundView(color: Color.yellow)
                 LoadingView()
             } else {
-                ColoredBackgroundView(color: shouldideployViewModel.shouldideployToday.shouldideploy ? Color.green : Color.red)
                 DeployView(shouldideployToday: shouldideployViewModel.shouldideployToday, onRefresh: {
                     shouldideployViewModel.fetchGuidance()
                 })
-                
-                
             }
-            
         }.onAppear{
             shouldideployViewModel.fetchGuidance()
         }
